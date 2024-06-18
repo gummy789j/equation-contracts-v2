@@ -141,8 +141,7 @@ interface IPriceFeed {
     ///
     /// Finally convert the price to Q64.96, ETH/USD priceX96 = 2000 / (10 ^ 18) * (10 ^ 6) * (2 ^ 96)
     /// @param marketPrices Array of market addresses and prices to update for
-    /// @param timestamp The timestamp of price update
-    function setPriceX96s(MarketPrice[] calldata marketPrices, uint64 timestamp) external;
+    function setPriceX96s(MarketPrice[] calldata marketPrices) external;
 
     /// @notice calculate min and max price if passed a specific price value
     /// @param marketPrices Array of market addresses and prices to update for
